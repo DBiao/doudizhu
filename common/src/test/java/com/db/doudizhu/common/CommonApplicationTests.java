@@ -1,10 +1,10 @@
-package com.db.server;
+package com.db.doudizhu.common;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServerApplicationTests {
+class CommonApplicationTests {
 
     @Test
     void contextLoads() {

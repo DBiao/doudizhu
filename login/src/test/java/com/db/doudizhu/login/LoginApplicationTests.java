@@ -1,4 +1,4 @@
-package com.db.login;
+package com.db.doudizhu.login;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

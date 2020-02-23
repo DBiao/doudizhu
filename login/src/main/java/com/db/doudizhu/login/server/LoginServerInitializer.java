@@ -22,7 +22,6 @@ public class LoginServerInitializer extends ChannelInitializer<Channel> {
         // 把多个消息转换为一个单一的FullHttpRequest或是FullHttpResponse，
         // 原因是HTTP解码器会在每个HTTP消息中生成多个消息对象HttpRequest/HttpResponse,HttpContent,LastHttpContent
         ch.pipeline().addLast(new HttpObjectAggregator(65536));
-        ch.pipeline().addLast(new WebSocketServerCompressionHandler());
         ch.pipeline().addLast(new LoginServerHandle());
     }
 }

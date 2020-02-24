@@ -24,7 +24,7 @@ public class LoginServer {
     private EventLoopGroup boss = new NioEventLoopGroup();
     private EventLoopGroup work = new NioEventLoopGroup();
 
-    @Value("${loginServer.port}")
+    @Value("${login.port}")
     private int nettyPort;
 
     /**

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package protobuf;
+
+option java_package = "";
+option java_outer_classname = "GameProto";
+
+message Message {
+    enum Type {
+        None = 0;
+        Kick = 1;
+    }
+
+    Type type = 1;
+    uint64 id = 2;
+    int32 protoId = 3;
+    string serviceName = 4;
+    bytes data = 5;
+    string error = 6;
+}

@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserByNameAndPw(User user) {
-        return userMapper.getUser(user);
+        return userMapper.getUserByNameAndPw(user);
     }
 
     @Override
@@ -29,5 +29,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public int insetUser(User user) {
         return userMapper.insertUser(user);
+    }
+
+    @Override
+    public User getUserByToken(User user) {
+        return userMapper.getUserByToken(user);
     }
 }

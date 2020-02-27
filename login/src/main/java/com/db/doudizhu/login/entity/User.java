@@ -9,17 +9,23 @@ import org.springframework.stereotype.Component;
  */
 
 @Data
-@Component
 public class User {
     private Integer uid;
+    private String token;
     private String name;
     private String password;
 
     public User() {
     }
 
-    public User(Integer uid, String name, String password) {
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
+    public User(Integer uid, String token, String name, String password) {
         this.uid = uid;
+        this.token = token;
         this.name = name;
         this.password = password;
     }

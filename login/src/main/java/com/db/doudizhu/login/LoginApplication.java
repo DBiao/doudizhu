@@ -14,5 +14,4 @@ public class LoginApplication {
         SpringApplication.run(LoginApplication.class, args);
         LOGGER.info("启动 login 成功");
     }
-
 }

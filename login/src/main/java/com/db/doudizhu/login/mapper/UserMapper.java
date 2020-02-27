@@ -14,11 +14,14 @@ import org.apache.ibatis.annotations.Update;
 public interface UserMapper {
 
     @Select("select * from users where name=#{name} and password=#{password}")
-    User getUser(User user);
+    User getUserByNameAndPw(User user);
 
     @Update("update users set token=#{token} where uid=#{uid}")
     int updateUser(User user);
 
     @Insert("insert into users (uid,token,name,password) values (#{uid},#{token},#{name},#{password})")
     int insertUser(User user);
+
+    @Select("select * from users where token=#{token}")
+    User getUserByToken(User user);
 }

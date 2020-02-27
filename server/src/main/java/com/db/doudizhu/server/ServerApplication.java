@@ -23,7 +23,7 @@ public class ServerApplication implements CommandLineRunner {
     private int serverPort;
 
     public static void main(String[] args) {
-        // SpringApplication.run(ServerApplication.class, args);
+        SpringApplication.run(ServerApplication.class, args);
         logger.info("启动 Server 成功");
     }
 

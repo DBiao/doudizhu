@@ -12,7 +12,10 @@ import org.springframework.stereotype.Service;
 public interface UserService {
     User getUserByNameAndPw(User user);
 
+    User getUserByToken(User user);
+
     int updateUserByUid(User user);
 
     int insetUser(User user);
+
 }

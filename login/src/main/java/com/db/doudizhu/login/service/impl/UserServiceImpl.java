@@ -1,4 +1,4 @@
-package com.db.doudizhu.login.serviceimpl;
+package com.db.doudizhu.login.service.impl;
 
 import com.db.doudizhu.login.entity.User;
 import com.db.doudizhu.login.mapper.UserMapper;
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * date: 2020/2/24 17:59
+ *
  * author: DengBiao
  */
 @Repository

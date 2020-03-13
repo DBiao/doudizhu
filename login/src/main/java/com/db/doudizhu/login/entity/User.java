@@ -18,9 +18,12 @@ public class User {
     public User() {
     }
 
+    public User(String token) {
+        new User(0, token, null, null);
+    }
+
     public User(String name, String password) {
-        this.name = name;
-        this.password = password;
+        new User(0, null, name, password);
     }
 
     public User(Integer uid, String token, String name, String password) {

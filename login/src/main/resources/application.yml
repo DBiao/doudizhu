@@ -53,3 +53,5 @@ spring:
 
 login:
   port: 20001
+  # zk 注册根节点
+  root: "/route"
